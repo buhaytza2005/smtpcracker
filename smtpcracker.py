@@ -17,8 +17,8 @@ def main():
     dict.close()
 
 def try_login(usr,pwd):
-    server = smtplib.SMTP_SSL(sys.argv[3],int(sys.argv[4]))
     try:
+        server = smtplib.SMTP_SSL(sys.argv[3],int(sys.argv[4]))
         server.login(usr,pwd)
         print(Fore.BLUE + "[+] Password matched: "+ Fore.RED + pwd+ Fore.RESET)
         matched = True

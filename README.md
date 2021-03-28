@@ -9,5 +9,5 @@ Python version: 3.0
 Libraries: smtplib, sys, threading, colorama, pyfiglet (**all available in python3**).
 ## Warning
 This script has been created for **ethical hacking** and **penetration-testing purposes**.                                                                  
-Do **NOT use** it **without permission** of the target.
+Do **NOT use** it **without permission** of the target.                                                                                             
 **I am not responsible for what can be done with this script.**

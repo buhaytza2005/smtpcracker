@@ -24,7 +24,6 @@ def try_login(usr,pwd):
         matched = True
         server.quit()
     except:
-        server.quit()
         pass
 
 main()

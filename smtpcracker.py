@@ -7,7 +7,7 @@ from pyfiglet import Figlet
 
 def main():
     banner = Figlet(font='big')
-    print(Style.BRIGHT + Fore.RED + banner.renderText("smtpcracker")+ Style.NORMAL)
+    print(Style.BRIGHT + Fore.RED + banner.renderText("smtpcracker")+ Style.NORMAL + Fore.RESET)
     dict = open(sys.argv[1] , "r")
     pwds = dict.readlines()
     for pwd in pwds:

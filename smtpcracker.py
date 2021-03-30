@@ -7,7 +7,7 @@ from pyfiglet import Figlet
 
 def main():
     tl = list()
-    banner = Figlet(font='big')
+    banner = Figlet(font='standard')
     print(Style.BRIGHT + Fore.RED + banner.renderText("smtpcracker")+ Style.NORMAL + Fore.RESET)
     dict = open(sys.argv[1] , "r")
     pwds = dict.readlines()
@@ -17,7 +17,7 @@ def main():
         x.start()
         tl.append(x)
         print_charge(len(tl),len(pwds), Fore.BLUE + "[+] Attack launched" + Fore.RESET)
-        time.sleep(0.3)
+        time.sleep(0.05)
     for t in tl: t.join()
     print(Fore.LIGHTGREEN_EX + "[+] Attack finished" + Fore.RESET)
     dict.close()

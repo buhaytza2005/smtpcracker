@@ -1,4 +1,6 @@
 # Smtpcracker
+## Info
+A very basic python3 tool for bruteforce password in smtp server.
 ## Usage
 The first argument is the **txt file with passwords**.                                                                                                                   
 The second argument is the **username** or **email** of the target.                                                                                                   

@@ -9,7 +9,7 @@ The last is the **smtp port** you want to attack.
 Example: ``python3 smtpcrack.py wordlist.txt crackme@gmail.com smtp.gmail.com 465``
 ## Requirements
 Python version: **3.0**                                                                                                                                                                     
-Libraries: smtplib, sys, threading, colorama, pyfiglet (**all available in python3**).
+Libraries: smtplib, sys, threading, colorama, pyfiglet, time (**all available in python3**).
 ## Warning
 This script has been created for **ethical hacking** and **penetration-testing purposes**.                                                                  
 Do **NOT use** it **without permission** of the target.                                                                                             

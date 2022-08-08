@@ -5,6 +5,10 @@ import smtplib,sys,threading,time
 from colorama import Fore,Style,Back
 from pyfiglet import Figlet
 
+if(len(sys.argv) < 5):
+    print("Usage: python3 smtpcracker.py wordlist.txt emailtocrack@domain.com smtp.example.server port")
+    exit(1)
+
 def main():
     tl = list()
     banner = Figlet(font='standard')

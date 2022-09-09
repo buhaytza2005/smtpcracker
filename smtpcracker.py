@@ -13,7 +13,7 @@ def main():
     tl = list()
     banner = Figlet(font='standard')
     print(Style.BRIGHT + Fore.RED + banner.renderText("smtpcracker")+ Style.NORMAL + Fore.RESET)
-    dict = open(sys.argv[1] , "r")
+    dict = open(sys.argv[1] , "r", errors="ignore")
     pwds = dict.readlines()
     print(Fore.LIGHTGREEN_EX + "[+] Attack started"+Fore.RESET)
     for pwd in pwds:
